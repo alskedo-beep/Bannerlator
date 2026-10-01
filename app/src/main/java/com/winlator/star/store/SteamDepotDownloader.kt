@@ -96,6 +96,9 @@ object SteamDepotDownloader {
      */
     private val STALE_DUPLICATE_DEPOTS: Map<Int, Set<Int>> = mapOf(
         993090 to setOf(993092),
+        
+        // DJMAX RESPECT V - exclude Steam Deck depot
+        960170 to setOf(960172),
     )
 
     /** The depots to drop for [appId] per [STALE_DUPLICATE_DEPOTS] (shared with the Rust-engine path). */
